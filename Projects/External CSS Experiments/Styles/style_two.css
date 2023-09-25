@@ -1,0 +1,11 @@
+h2 {
+    background-color: rgb(30, 161, 80);
+    color: rgb(37, 37, 37);
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: blue;
+}

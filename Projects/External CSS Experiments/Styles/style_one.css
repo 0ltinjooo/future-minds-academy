@@ -1,0 +1,13 @@
+h1 {
+    background-color: violet;
+    color: green;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+p {
+    font-size: medium;
+    color: rgb(67, 33, 68);
+    text-decoration: none;
+}
