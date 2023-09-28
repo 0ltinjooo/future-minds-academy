@@ -12,16 +12,3 @@
     border: 2px solid yellow;
     box-shadow: 2px gray;
 }
-
-.light_new {
-    background-color: lightgray;
-    color: black;
-    border: 2px solid yellow;
-}
-
-.dark_new {
-    background-color: black;
-    color: white;
-    border: 2px solid yellow;
-    box-shadow: 2px gray;
-}
