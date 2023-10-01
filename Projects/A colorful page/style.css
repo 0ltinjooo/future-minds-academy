@@ -1,0 +1,30 @@
+body {
+    background-image: url('img/nyc.jpg');
+    background-size: cover;
+}
+
+h1 {
+    background: rgb(191, 192, 192);
+    background: linear-gradient(48deg, rgb(218, 119, 38, 0.5)1%, rgb(44, 72, 173, 0.5)99%);
+    color: rgb(128, 219, 219);
+}
+
+p {
+    background: rgb(191, 192, 192);
+    background: linear-gradient(48deg, rgb(218, 119, 38, 0.3)15%, rgb(44, 72, 173, 0.4)47%);
+    width: 800px;
+    color: rgb(211, 104, 65);
+}
+
+ul {
+    background: rgb(191, 192, 192);
+    background: linear-gradient(48deg, rgb(218, 119, 38, 0.1)8%, rgb(44, 72, 173, 0.2)78%);
+    opacity: 0.6;
+    color: rgb(79, 233, 58);
+}
+
+.paragrafi-2 {
+    background: rgb(128, 219, 219);
+    background: linear-gradient(48deg, rgb(150, 105, 68)5%, rgb(40, 50, 83)90%);
+    color: rgb(60, 48, 200);
+}
