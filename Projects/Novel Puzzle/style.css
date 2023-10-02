@@ -1,0 +1,15 @@
+.first-letter {
+    font-size: 40px;
+    text-decoration: underline orange;
+    font-weight: bold;
+    float: left;
+}
+
+p {
+    width: 700px;
+}
+
+.first-text {
+    text-transform: uppercase;
+    font-weight: bold;
+}
