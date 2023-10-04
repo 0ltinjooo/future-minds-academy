@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section:nth-child(even) {
+    background-color: #e0e0e0;
+    height: 25vh;
+    position: relative;
+}
+
+section:nth-child(odd) {
+    background-color: #332e2e;
+    height: 25vh;
+    position: relative;
+}
+
+section h2 {
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    margin: 1em;
+    text-decoration: underline black;
+}
+
+section p {
+    font-size: 1.5em;
+    font-family: Helvetica, sans-serif;
+    margin: 0.5em 1em;
+}
+
+section hr {
+    width: 33%;
+    border: 1px solid red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+section:last-child hr {
+    margin-bottom: 25vh;
+}
