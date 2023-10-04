@@ -1,0 +1,9 @@
+p::before {
+    content: "";
+    background-image: url('img/paris.jpg');
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
