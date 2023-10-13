@@ -1,0 +1,461 @@
+.home {
+    padding: 1em;
+    background-color: #26bbe9;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header hr {
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.contact {
+    padding: 1em;
+    background-color: #26bbe9;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.projekti:first-child {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-image: url(img/portfolio-background-header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.middle {
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.who {
+    border-radius: 20px;
+    background: rgb(19, 0, 36);
+    background: linear-gradient(90deg, rgba(19, 0, 36, 1) 14%, rgba(9, 96, 121, 1) 54%, rgba(0, 212, 255, 1) 100%);
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+    padding: 20px;
+    color: wheat;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.doubleline {
+    text-decoration: underline black;
+}
+
+.who:hover {
+    background: rgb(2, 36, 0);
+    background: linear-gradient(90deg, rgba(2, 36, 0, 1) 0%, rgba(5, 62, 49, 1) 20%, rgba(9, 121, 60, 1) 47%, rgba(0, 212, 255, 1) 100%);
+}
+
+.contact:hover {
+    background-color: rgb(18, 18, 177);
+    border: 1px solid rgb(18, 18, 177);
+}
+
+.home:hover {
+    background-color: rgb(18, 18, 177);
+    border: 1px solid rgb(18, 18, 177);
+}
+
+.lists {
+    border-radius: 20px;
+    background-color: rgb(201, 75, 75);
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 1em;
+}
+
+.primary {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px;
+    font-weight: bold;
+    margin-left: -5px;
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lists:hover {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+nav {
+    text-align: center;
+    margin: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+
+}
+
+section.home,
+section.contact {
+    margin: 0 10px;
+}
+
+.high-school {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px;
+    font-weight: bold;
+    margin-left: -5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.shmt {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.shfmu {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+table {
+    background-color: green;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.table-border {
+    padding: 1em;
+    border-radius: 20px;
+    background: rgb(11, 145, 31);
+    background: linear-gradient(90deg, rgba(11, 145, 31, 1) 14%, rgba(59, 173, 12, 1) 33%, rgba(0, 212, 255, 1) 100%);
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.table-border:hover {
+    background: rgb(11, 145, 80);
+    background: linear-gradient(90deg, rgba(11, 145, 80, 1) 26%, rgba(59, 173, 12, 1) 45%, rgba(255, 111, 0, 1) 100%);
+}
+
+.myprojects {
+    padding: 1em;
+    border-radius: 20px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+ol {
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.three-li {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.three-li::after {
+    content: " →";
+    margin-left: 5px;
+}
+
+.three-li:hover {
+    background-color: #0056b3;
+}
+
+.myprojects:hover {
+    background: rgb(34, 195, 112);
+    background: linear-gradient(0deg, rgba(34, 195, 112, 1) 29%, rgba(45, 217, 253, 1) 100%);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact-ul {
+    padding: 1em;
+    background-color: #0E7C7B;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-ul:hover {
+    background-color: #42F2F7;
+    transition: background-color 0.3s;
+}
+
+.message-box {
+    padding: 40px;
+    background-color: #0E7C7B;
+    border-radius: 15px;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+}
+
+.message-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.message-box form {
+    text-align: center;
+}
+
+.message-box input[type="email"],
+.message-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.message-box input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.message-box input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.connect-with-me {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.connect-with-me h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.connect-with-me a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.connect-with-me img {
+    width: 50px;
+    height: 50px;
+}
+
+.connect-with-me a:hover img {
+    opacity: 0.8;
+}
+
+.connect-with-me a[href^="tel:"] {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.basic-website {
+    text-align: center;
+    padding: 20px;
+    background-color: #0E7C7B;
+    border-radius: 15px;
+}
+
+.project-section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #276579;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-section p {
+    text-align: left;
+    margin: 10px;
+}
+
+.project-section:hover {
+    background: rgb(0, 11, 214);
+    background: radial-gradient(circle, rgba(57, 92, 107) 0%, rgba(122, 145, 141) 100%);
+    transition: background-color 0.3s;
+}
+
+.projects-ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: #0e3055;
+}
+
+.projects-ul:hover {
+    background-color: #1669a0;
+    padding: 1em;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+
+.mobile-app {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #0D1F22;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mobile-app img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile-app p {
+    text-align: left;
+    margin: 10px;
+}
+
+.mobile-app:hover {
+    background: rgb(147, 183, 190);
+    background: linear-gradient(90deg, rgba(147, 183, 190, 1) 9%, rgba(241, 255, 250, 1) 49%, rgba(110, 131, 128, 1) 100%);
+    transition: background-color 0.3s;
+    color: black;
+}
+
+.robust-platform {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #1A2618;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: wheat;
+}
+
+.robust-platform img {
+    max-width: 100%;
+    height: auto;
+}
+
+.robust-platform p {
+    text-align: left;
+    margin: 10px;
+}
+
+.robust-platform:hover {
+    background: rgb(7, 17, 8);
+    background: radial-gradient(circle, rgba(7, 17, 8, 1) 0%, rgba(37, 50, 31, 1) 100%);
+    transition: background-color 0.3s;
+}
+
+.middle-projects {
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.middle-contact {
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+}
+
+* {
+    cursor: url('img/icons8-cursor-24.png'), auto;
+}
