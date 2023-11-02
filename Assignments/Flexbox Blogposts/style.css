@@ -1,20 +1,15 @@
-body {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "aside main";
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-}
-
 aside {
-    grid-area: aside;
+    min-height: 100vh;
     background-color: gray;
     padding: 10px;
     position: fixed;
-    min-height: 100vh;
-    overflow: auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    text-wrap: 1;
 }
 
 .header-of-aside {
@@ -30,7 +25,7 @@ aside {
     align-items: flex-end;
     padding: 0;
     margin: 0;
-    width: 320px;
+    width: 300px;
     margin-top: 25%;
     text-align: end;
     margin-left: 5px;
@@ -46,7 +41,7 @@ aside {
 button {
     display: inline-block;
     padding: 0.35em 1.2em;
-    border: 0.1em solid white;
+    border: 0.1em solid #FFFFFF;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
@@ -60,15 +55,17 @@ button {
 
 button:hover {
     color: wheat;
-    background-color: gray;
+    background-color: #2c2c2c;
 }
 
 .blogposts {
-    grid-area: main;
-    width: 100%;
+    float: right;
+    box-sizing: border-box;
+    font-size: 1rem;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     gap: 10px;
     overflow-y: scroll;
     box-shadow: inset 0px 0 px 20px 0 px #abababab;
@@ -89,8 +86,6 @@ a {
 
 .pinned-post {
     width: 800px;
-    height: 400px;
-    position: relative;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -111,9 +106,9 @@ h1 {
 .user-image {
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: relative;
     top: 10px;
-    right: 10px;
+    left: 700px;
     border-radius: 50%;
     background-size: cover;
     background-color: white;
@@ -121,8 +116,7 @@ h1 {
 
 .recent-posts {
     width: 800px;
-    height: 400px;
-    position: relative;
+    font-size: 1rem;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
