@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(5px);
+    transition: transform 0.4s;
+}
+
+img:hover{
+    cursor: pointer;
+    filter: none;
+    transform: rotate(720deg);
+    transition-delay: filter 0, transform 0.2s;
+}
