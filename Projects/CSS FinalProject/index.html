@@ -7,45 +7,241 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
 </head>
 
 <body>
     <div class="sidebar">
         <div class="sidebar-overlay">
             <ul class="nav">
-                <li><a href="#" class="first-text"><h2>CT &nbsp; &nbsp; COOL PAGE</h2></a></li>
+                <li><span class="first-text">
+                        <h2>CT &nbsp; COOL PAGE</h2>
+                    </span></li>
                 <hr>
                 <li><span class="admin-overlay"><img src="images/avatar.jpg" alt="admin-selfie"></span>
-                <span class="admin-description">John Doe</span>
+                    <span class="admin-description">John Doe</span>
                 </li>
                 <hr>
-                <li class="dashboard"> <a href="#"><span class="material-icons">dashboard</span>Dashboard</a></li>
-                <li> <a href="#"><span class="material-icons">image</span>Pages</a></li>
-                <li> <a href="#"><span class="material-icons">apps</span>Components</a></li>
-                <li> <a href="#"><span class="material-icons">content_paste</span>Forms</a></li>
-                <li> <a href="#"><span class="material-icons">grid_on</span>Tables</a></li>
-                <li> <a href="#"><span class="material-icons">location_on</span>Maps</a></li>
-                <li> <a href="#"><span class="material-icons">widgets</span>Widgets</a></li>
-                <li> <a href="#"><span class="material-icons">trending_up</span>Charts</a></li>
-                <li> <a href="#"><span class="material-icons">date_range</span>Calendar</a></li>
+                <li class="dashboard"> <a href="#"><span class="material-icons">dashboard</span> &nbsp; &nbsp;
+                        Dashboard</a></li>
+                <li> <a href="#"><span class="material-icons">image</span> &nbsp; &nbsp; Pages</a></li>
+                <li> <a href="#"><span class="material-icons">apps</span> &nbsp; &nbsp; Components</a></li>
+                <li> <a href="#"><span class="material-icons">content_paste</span> &nbsp; &nbsp; Forms</a></li>
+                <li> <a href="#"><span class="material-icons">grid_on</span> &nbsp; &nbsp; Tables</a></li>
+                <li> <a href="#"><span class="material-icons">location_on</span> &nbsp; &nbsp; Maps</a></li>
+                <li> <a href="#"><span class="material-icons">widgets</span> &nbsp; &nbsp; Widgets</a></li>
+                <li> <a href="#"><span class="material-icons">trending_up</span> &nbsp; &nbsp; Charts</a></li>
+                <li> <a href="#"><span class="material-icons">date_range</span> &nbsp; &nbsp; Calendar</a></li>
             </ul>
         </div>
     </div>
-    <nav class="navbar">
-        <button id="menu-btn" class="btn"><span class="material-icons btn">more_vert</span></button>
-        <a href="#">Dashboard</a>
-        <span class="search-bar">
-            <input type="text" class="search-bar-input" placeholder="Search">
-            <button id="search-btn" class="btn"><span class="material-icons">search</span></button>
-        </span>
-        <span  id="nav-dash-icon" class="material-icons">dashboard</span>
-        <span id="nav-noti-icon" class="material-icons"><span class="notification">5</span> notifications</span>
-        <span id="nav-person-icon" class="material-icons">person</span>
+    <div class="right">
+        <nav>
+            <div class="top-left-side">
+                <button id="menu-btn" class="btn" title="See More"><span
+                        class="material-icons btn">more_vert</span></button>
+                <a href="#">Dashboard</a>
+            </div>
+            <div class="top-right-side">
+                <span class="search-bar">
+                    <input type="text" class="search-bar-input" placeholder="Search">
+                    <button id="search-btn" class="btn"><span title="Search" class="material-icons btn">search</span></button>
+                </span>
+                <span title="Dashboard" class="material-icons">dashboard</span>
+                <span title="Notifications" class="material-icons">notifications
 
 
 
-    </nav>
+
+
+
+                </span>
+                <span class="notifications">5</span>
+                <span title="Profile" class="material-icons">person</span>
+            </div>
+        </nav>
+        <div class="card-content">
+            <h4 class="card-title">
+                <div class="material-icons card-image"></div> Global Sales by Top Locations
+            </h4>
+            <div class="table-sales">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <img src="images/flags/US.jpg" alt="usa-flag">
+                        </td>
+                        <td>USA</td>
+                        <td>2.920</td>
+                        <td>53.23%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/flags/DE.jpg" alt="germany-flag"></td>
+                        <td>Germany</td>
+                        <td>1.300</td>
+                        <td>20.43%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/flags/AU.jpg" alt="Australia-flag"></td>
+                        <td>Australia</td>
+                        <td>760</td>
+                        <td>10.35%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/flags/GB.jpg" alt="UK-flag"></td>
+                        <td>United Kingdom</td>
+                        <td>690</td>
+                        <td>7.87%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/flags/RO.jpg" alt="romanian-flag"></td>
+                        <td>Romania</td>
+                        <td>600</td>
+                        <td>5.94%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/flags/BR.jpg" alt="brazil-flag"></td>
+                        <td>Brazil</td>
+                        <td>550</td>
+                        <td>4.34%</td>
+                    </tr>
+                </table>
+                <div class="direction"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0359889412!2d-74.30931861939158!3d40.69753997720293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1699572131616!5m2!1sen!2s"
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+        <div class="grid-cards-container">
+            <div class="element1">
+                <div class="element1-main">
+                    <div class="left-side-image">
+                        <span class="material-icons card-images">weekend</span>
+                    </div>
+                    <div class="right-side-descrition">
+                        <span class="element-description">Bookings</span>
+                        <span class="amount">187</span>
+                    </div>
+                </div>
+                <div class="element1-footer">
+                    <hr>
+                    <div class="footer-description">
+                        <span class="material-icons">warning</span>
+                        <span class="footer-description">Get More Space</span>
+                    </div>
+                </div>
+            </div>
+            <div class="element4">
+                <div class="element4-main">
+                    <div class="left-side-image-el4">
+                        <span class="material-icons card4-images">store</span>
+                    </div>
+                    <div class="right-side-descrition-el4">
+                        <span class="element-description">Revenue</span>
+                        <span class="amount">$34,245</span>
+                    </div>
+                </div>
+                <div class="element4-footer">
+                    <hr>
+                    <div class="footer-description">
+                        <span class="material-icons">date_range</span>
+                        <span class="footer-description">Last 24 Hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="element2">
+                <div class="element2-main">
+                    <div class="left-side-image-el2">
+                        <span class="material-icons card2-images">public</span>
+                    </div>
+                    <div class="right-side-descrition-el2">
+                        <span class="element-description">Followers</span>
+                        <span class="amount">+245</span>
+                    </div>
+                </div>
+                <div class="element2-footer">
+                    <hr>
+                    <div class="footer-description">
+                        <span class="material-icons">update</span>
+                        <span class="footer-description">Just Updated</span>
+                    </div>
+                </div>
+            </div>
+            <div class="element3">
+                <div class="element2-main">
+                    <div class="left-side-image-el2">
+                        <span class="material-icons card3-images">equalizer</span>
+                    </div>
+                    <div class="right-side-descrition-el2">
+                        <span class="element-description">Website Visits</span>
+                        <span class="amount">75.521</span>
+                    </div>
+                </div>
+                <div class="element2-footer">
+                    <hr>
+                    <div class="footer-description">
+                        <span class="material-icons">local_offer</span>
+                        <span class="footer-description">Tracked from Google Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Manage Listings</h3>
+        <div class="hotel-cards">
+            <div class="card-1">
+                <div class="hotel-content">
+                    <div class="card-1-image images"></div>
+                    <span class="hotel-title">Cozy 5 Stars Apartment</span>
+                    <span class="hotel-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nobis
+                        quis dignissimos nemo perferendis provident ipsum, at ipsa suscipit atque!</span>
+                </div>
+                <div class="hotel-footer">
+                    <div class="hotel-price">$899/night</div>
+                    <div class="hotel-location">
+                        <p class="city"><span class="material-icons">place</span>Barcelona, Spain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="hotel-content">
+                    <div class="card-2-image images"></div>
+                    <span class="hotel-title">Office Studio</span>
+                    <span class="hotel-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                        incidunt consequatur quos deleniti nisi nemo nam placeat? Cumque, deleniti voluptatem.</span>
+                </div>
+                <div class="hotel-footer">
+                    <div class="hotel-price">$1.119/night</div>
+                    <div class="hotel-location">
+                        <p class="city"><span class="material-icons">place</span>London, UK</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-3">
+                <div class="hotel-content">
+                    <div class="card-3-image images"></div>
+                    <span class="hotel-title">Beautiful Castle</span>
+                    <span class="hotel-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                        incidunt consequatur quos deleniti nisi nemo nam placeat? Cumque, deleniti voluptatem.</span>
+                </div>
+                <div class="hotel-footer">
+                    <div class="hotel-price">$459/night</div>
+                    <div class="hotel-location">
+                        <p class="city"><span class="material-icons">place</span>Milan, Italy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-left-side">
+                    <a href="#">HOME</a>
+                    <a href="#">COMPANY</a>
+                    <a href="#">PORTFOLIO</a>
+                    <a href="#">BLOG</a>
+            </div>
+            <div class="footer-right-side">
+                <span>&copy;John Doe, 2023</span>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
