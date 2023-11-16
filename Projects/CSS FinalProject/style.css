@@ -52,17 +52,7 @@ body {
     font-family: var(--default-font);
     margin: 10px 0px 0px;
 }
-.sidebar a::after{
-    content: '';
-    gap: 1rem;
-    width: 0;
-    height: 0;
-    vertical-align: middle;
-    border-top: 4px dashed;
-    border-top: 4px solid 9;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-}
+
 .sidebar a:hover{
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 3px;
