@@ -18,20 +18,30 @@
                         <h2>CT &nbsp; COOL PAGE</h2>
                     </span></li>
                 <hr>
-                <li><span class="admin-overlay"><img src="images/avatar.jpg" alt="admin-selfie"></span>
-                    <span class="admin-description">John Doe</span>
-                </li>
+                <div class="admin-profile">
+                    <img src="images/avatar.jpg" alt="admin profile">
+                    <span class="admin-details">John Doe</span>
+                    <span class="material-icons">keyboard_arrow_down</span>
+                </div>
                 <hr>
-                <li class="dashboard"> <a href="#"><span class="material-icons">dashboard</span> &nbsp; &nbsp;
-                        Dashboard</a> <span class="material-icons">keyboard_arrow_down</span></li>
-                <li> <a href="#"><span class="material-icons">image</span> &nbsp; &nbsp; Pages</a></li>
-                <li> <a href="#"><span class="material-icons">apps</span> &nbsp; &nbsp; Components</a></li>
-                <li> <a href="#"><span class="material-icons">content_paste</span> &nbsp; &nbsp; Forms</a></li>
-                <li> <a href="#"><span class="material-icons">grid_on</span> &nbsp; &nbsp; Tables</a></li>
-                <li> <a href="#"><span class="material-icons">location_on</span> &nbsp; &nbsp; Maps</a></li>
-                <li> <a href="#"><span class="material-icons">widgets</span> &nbsp; &nbsp; Widgets</a></li>
-                <li> <a href="#"><span class="material-icons">trending_up</span> &nbsp; &nbsp; Charts</a></li>
-                <li> <a href="#"><span class="material-icons">date_range</span> &nbsp; &nbsp; Calendar</a></li>
+                <li class="dashboard"> <a href="#" class="dashboard"><span
+                            class="material-icons">dashboard</span>Dashboard</a></li>
+                <li> <a href="#"><span class="material-icons">image</span> Pages
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">apps</span> Components
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">content_paste</span> Forms
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">grid_on</span> Tables
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">location_on</span> Maps
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">widgets</span> Widgets
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">trending_up</span> Charts
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">date_range</span> Calendar
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
             </ul>
         </div>
     </div>
@@ -45,23 +55,27 @@
             <div class="top-right-side">
                 <span class="search-bar">
                     <input type="text" class="search-bar-input" placeholder="Search">
-                    <button id="search-btn" class="btn"><span title="Search" class="material-icons btn">search</span></button>
+                    <button id="search-btn" class="btn"><span title="Search"
+                            class="material-icons btn">search</span></button>
                 </span>
                 <span title="Dashboard" class="material-icons">dashboard</span>
                 <div class="two-notify">
                     <span title="Notifications" class="material-icons">notifications</span>
                     <span class="notifications">5</span>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li>John Doe Sent a Message</li>
-                                <li>Someone viewed your Profile</li>
-                                <li>John Doe Sent a Message</li>
-                                <li>Someone viewed your Profile</li>
-                                <li>Another Notification</li>
-                            </ul>
-                        </div>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>John Doe Sent a Message</li>
+                            <li>Someone viewed your Profile</li>
+                            <li>John Doe Sent a Message</li>
+                            <li>Someone viewed your Profile</li>
+                            <li>Another Notification</li>
+                        </ul>
+                    </div>
                 </div>
                 <span title="Profile" class="material-icons">person</span>
+            </div>
+            <div class="menu">
+                <span class="material-icons" title="Menu">menu</span>
             </div>
         </nav>
         <div class="card-content">
@@ -111,8 +125,9 @@
                 </table>
                 <div class="direction"><iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0359889412!2d-74.30931861939158!3d40.69753997720293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1699572131616!5m2!1sen!2s"
-                        width="100%" height="350rem" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
         <div class="grid-cards-container">
@@ -194,8 +209,13 @@
             <div class="card-1">
                 <div class="hotel-content">
                     <div class="cards-hover">
-                        <div class="card-1-image images"></div>
-                    </div>  
+                        <img src="images/card-1.jpeg" alt="hotel-picture">
+                        <div class="card-icons">
+                            <span class="material-icons track" title="View">art_track</span>
+                            <span class="material-icons edit" title="Edit">edit</span>
+                            <span class="material-icons close" title="Close">close</span>
+                        </div>
+                    </div>
                     <span class="hotel-title">Cozy 5 Stars Apartment</span>
                     <span class="hotel-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nobis
                         quis dignissimos nemo perferendis provident ipsum, at ipsa suscipit atque!</span>
@@ -210,7 +230,12 @@
             <div class="card-2">
                 <div class="hotel-content">
                     <div class="cards-hover">
-                        <div class="card-2-image images"></div>
+                        <img src="images/card-2.jpeg" alt="hotel-picture">
+                        <div class="card-icons">
+                            <span class="material-icons track" title="View">art_track</span>
+                            <span class="material-icons edit" title="Edit">edit</span>
+                            <span class="material-icons close" title="Close">close</span>
+                        </div>
                     </div>
                     <span class="hotel-title">Office Studio</span>
                     <span class="hotel-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
@@ -226,7 +251,12 @@
             <div class="card-3">
                 <div class="hotel-content">
                     <div class="cards-hover">
-                        <div class="card-3-image"></div>
+                        <img src="images/card-3.jpeg" alt="hotel-picture">
+                        <div class="card-icons">
+                            <span class="material-icons track" title="View">art_track</span>
+                            <span class="material-icons edit" title="Edit">edit</span>
+                            <span class="material-icons close" title="Close">close</span>
+                        </div>
                     </div>
                     <span class="hotel-title">Beautiful Castle</span>
                     <span class="hotel-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
@@ -242,10 +272,10 @@
         </div>
         <footer class="footer">
             <div class="footer-left-side">
-                    <a href="#">HOME</a>
-                    <a href="#">COMPANY</a>
-                    <a href="#">PORTFOLIO</a>
-                    <a href="#">BLOG</a>
+                <a href="#">HOME</a>
+                <a href="#">COMPANY</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">BLOG</a>
             </div>
             <div class="footer-right-side">
                 <span>&copy;John Doe, 2023</span>
