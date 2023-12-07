@@ -12,10 +12,6 @@
         let points = parseInt(prompt(`Type your points`))
         let grade;
 
-        if (isNaN(points) || points < 0 || points > 100) {
-            console.log("There was an error in your input")
-        }
-
         if (points >= 0 && points <= 19) {
             grade = 1;
         } else if (points >= 20 && points <= 39) {
@@ -26,6 +22,10 @@
             grade = 4;
         } else if (points >= 80 && points <= 100) {
             grade = 5;
+        }
+        
+        else{
+            console.log(`There was a error in ur input`)
         }
 
         console.log(`Your grade is: ${grade}`);

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt(`Shkuraj numrin e pare`));
+        let b = parseInt(prompt(`Shkruaj numrin e dyte`));
+        let operacioni = prompt(`Shkuraj llojin e operacionit`);
+        let result;
+
+        switch (operacioni) {
+            case 'shumzim':
+                result = a * b;
+                break;
+            case 'pjestim':
+                if (b !== 0){
+                    result = a / b;
+                } 
+                else {
+                    result = 'Nuk mund te pjestoni me zero'
+                }
+                result = a / b;
+                break;
+            case 'mledhje':
+                result = a + b;
+                break;
+            case 'zbritje':
+                result = a - b;
+                break;
+            default:
+                throw new Error('Operacioni i Gabuar');
+        }
+
+        console.log(result);
+
+    </script>
+</body>
+
+</html>
