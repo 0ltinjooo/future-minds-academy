@@ -13,7 +13,7 @@
         let userInput;
 
         do {
-            userInput = prompt('Enter the password:');
+            userInput = prompt(`Enter the password:`);
             attempts++;
 
             if (userInput == '12341234') {
@@ -21,9 +21,9 @@
                 break;
             } else {
                 if (attempts < 3) {
-                    console.log(`Incorrect password. You have ${attempts} left`);
+                    console.log(`Incorrect password. You have ${3 - attempts} ${attempts === 2? 'attempt' : 'attempts'} left.`);
                 } else {
-                    console.log('Maximum attempts reached try again later');
+                    console.log(`Maximum attempts reached try again later`);
                 }
             }
         } while (attempts < 3);
