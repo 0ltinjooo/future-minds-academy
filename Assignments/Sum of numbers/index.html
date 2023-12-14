@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+</head>
+
+<body>
+    <script>
+        let sum = 0;
+
+        while (true) {
+            let userInput = parseInt(prompt(`Pick a number?`))
+
+
+            sum += userInput;
+
+            if (userInput === 0) {
+                console.log(`The sum of the numbers you wrote is equal to ${sum}.`)
+                break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
