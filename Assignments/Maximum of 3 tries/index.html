@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let attempts = 0;
+        let userInput;
+
+        do {
+            userInput = prompt('Enter the password:');
+            attempts++;
+
+            if (userInput == '12341234') {
+                console.log('Welcome!');
+                break;
+            } else {
+                if (attempts < 3) {
+                    console.log(`Incorrect password. You have ${attempts} left`);
+                } else {
+                    console.log('Maximum attempts reached try again later');
+                }
+            }
+        } while (attempts < 3);
+
+    </script>
+</body>
+
+</html>
