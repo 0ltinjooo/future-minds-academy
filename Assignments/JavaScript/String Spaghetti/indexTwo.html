@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temperature = 'New York, 15°C';
+        let presja = temperature.indexOf(',');
+        let city = temperature.substring(0, presja);
+        let temp = parseInt(temperature.substring(presja + 2, temperature.length - 2));
+        console.log(`Qyteti: ${city} dhe Temperatura: ${temp}`);
+    </script>
+</body>
+</html>
