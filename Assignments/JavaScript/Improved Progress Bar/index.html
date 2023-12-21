@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bar-progres">
+        <span class="perqindja">100%</span>
+        <div class="line">
+            <div id="bar" class="filledBar"></div>
+        </div>
+        <span class="perqindja">0%</span>
+    </div>
+
+    <script>
+        function getProgressColor(percentage) {
+            if (percentage < 20) return 'red';
+            else if (percentage < 50) return 'orangered';
+            else if (percentage < 75) return 'yellow';
+            else return 'green';
+        }
+    
+        function modifyProgressBar(percentage, color) {
+            let progressBar = document.getElementById('bar');
+            progressBar.style.backgroundColor = color;
+            progressBar.style.height = `${percentage}%`;
+            progressBar.title = `${percentage}%`;
+        }
+    
+        function setProgress() {
+            let randomPercentage = Math.floor(Math.random() * 101);
+    
+            let progressColor = getProgressColor(randomPercentage);
+            modifyProgressBar(randomPercentage, progressColor); // Corrected function name
+        }
+    
+        setProgress();
+        setInterval(setProgress, 2000);
+    </script>
+    
+</body>
+
+</html>
