@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a title</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAgxJREFUWEftlj8oR1EUxz+/KEmUQcjAYjBZlMEgymSQolCIhGSiJCUZSEoJyb+SkMEgq0VGZTGZDQYZDJJF8Ts6P123d7337k/9DL+33ffuOe97vt/7PecmyPCTyPD/yQLIMvBvGOgCdoBC4BoYAO4iOqQG2AfqPWK/XZALzAMz+tNNYAp4DQFRDGwDncAL0AFcRAT+tc2UoAzYA1o1wbCuPxwJBfQksKTfp5MMrgDvvgAkrhE4SFJamZThXiu6cSQ0ZTsFRoDnOD+3GZB1DjABLGuic038aCVOS3czV5ALioB1oM9Bbanq3qa69wIC1Otx2VAqPAFqrcP1J7qHMZCSphvYUmteAlJpHXCo785Uniev0jXot0aUr2dhXPceAdW+fneBDOuEFVpxk5FA/D6qErksGpmUMAC2NWU9q96P5XdfBoIAeHs+CEQYA1WAaN9gBXt1vbgACvQQjmngGtACiEWlS/YDV5HFdmx0MSDvh3RCSuiu9v1BYFVzpaz5kA4IFwBzJpjj2e6SGzo133xBBAEwp2KQ5cw5kLYlbQC27ovAnDViJcbskre6jnqB+UGWCcBO7JqEksDukt7WNAGI1Y6Nu0DYKbe7pJc1UwDMESsVht2GUjQ2a58o97WmAMgDFtRmkjjqfVD22uM5tjUFQI8xduPeiAVEiV5Q2pWWWNYMa8W+9o4cl3EAn1CceyGXZ4w8AAAAAElFTkSuQmCC">
+</head>
+
+<body>
+    <script>
+        const defaultTitle = document.title;
+        let faviconElement = document.querySelector("link[rel~='icon']");
+        let defaultFavicon = faviconElement.href;
+        let bellIconLink = getBellEmoji();
+        let isInDefaultState = true;
+        let notificationInterval;
+
+        function startNotification(message) {
+                if(notificationInterval)
+                    endNotification();
+
+             notificationInterval = setInterval(() => {
+                if (isInDefaultState) {
+                    setToNotification(message);
+                } else {
+                    resetToDefault();
+                }
+                isInDefaultState = !isInDefaultState;
+            }, 1000);
+        }
+
+
+        function endNotification() {
+            clearInterval(notificationInterval);
+            resetToDefault();
+        }
+
+        function resetToDefault() {
+            document.title = defaultTitle;
+            faviconElement.href = defaultFavicon;
+        }
+
+        function setToNotification(message) {
+            document.title = message;
+            faviconElement.href = bellIconLink;
+        }
+
+        function getBellEmoji() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 32;
+            canvas.height = 32;
+            const context = canvas.getContext('2d');
+            context.font = '32px sans-serif';
+            context.fillText('🔔',0,30);
+
+            return canvas.toDataURL('image/png');
+        }
+
+    </script>
+</body>
+
+</html>
