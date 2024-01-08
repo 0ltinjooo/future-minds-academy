@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(58, 58, 230);
+            margin: 0;
+            padding: 0;
+        }
+
+        #taskList {
+            list-style-type: none;
+            color: white;
+            font-size: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .date {
+            color: white;
+            font-size: 2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="date">
+        <p>Tasks for: <span id="currentDate"></span></p>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        
+        function getCurrentDate() {
+            let now = new Date();
+            let year = now.getFullYear();
+            let month = String(now.getMonth() + 1).padStart(2, '0');
+            let day = String(now.getDate()).padStart(2, '0');
+            return `${month}/${day}/${year}`;
+        }
+
+        
+        function addTask(taskText) {
+            let taskList = document.getElementById('taskList');
+
+            
+            let listItem = document.createElement('li');
+            listItem.textContent = taskText;
+            taskList.appendChild(listItem);
+        }
+
+        
+        document.getElementById('currentDate').textContent = getCurrentDate();
+
+
+        function promptTasks() {
+            let taskText;
+
+            while (true) {
+                taskText = prompt('Enter your tasks for today:');
+
+
+                if (taskText === null || taskText.trim() === '') {
+                    break;
+                }
+
+                addTask(taskText.trim());
+            }
+        }
+
+
+        promptTasks();
+    </script>
+</body>
+
+</html>
