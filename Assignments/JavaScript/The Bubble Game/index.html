@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bubble {
+            opacity: 0.7;
+            border-radius: 50%;
+            position: fixed;
+            animation: moveUpDown 3s linear infinite;
+        }
+
+        @keyframes moveBubble {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(50px, 50px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function popBubble() {
+            this.remove();
+        }
+        for (let i = 0; i < 300; i++) {
+            let bubble = document.createElement('div');
+            bubble.classList.add('bubble');
+            let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            let bubbleSize = Math.floor(Math.random() * 100) + 'px';
+            let bubbles = document.querySelectorAll('.bubble');
+            bubble.style.width = bubbleSize;
+            bubble.style.height = bubbleSize;
+            bubble.style.backgroundColor = '#' + randomColor;
+            bubble.style.top = Math.floor(Math.random() * window.innerHeight) + 'px';
+            bubble.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';
+            bubble.addEventListener('click', popBubble);
+            document.body.appendChild(bubble);
+        }
+    </script>
+</body>
+
+</html>
