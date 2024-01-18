@@ -5,6 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .movie-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: 250px;
+        }
+
+        .highest-rated {
+            background: #fff;
+            font-family: Montserrat, sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: bold;
+            color: #009688;
+            padding: 40px;
+            box-shadow:
+                inset #009688 0 0 0 5px,
+                inset #059c8e 0 0 0 1px,
+                inset #0cab9c 0 0 0 10px,
+                inset #1fbdae 0 0 0 11px,
+                inset #8ce9ff 0 0 0 16px,
+                inset #48e4d6 0 0 0 17px,
+                inset #e5f9f7 0 0 0 21px,
+                inset #bfecf7 0 0 0 22px;
+            text-shadow: 3px 3px 1px #bfecf7;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,11 +88,26 @@
             }
         ];
 
-        movies = movies.sort((a, b) => {
-            if(a.rating < b.rating)
-            return -1;
-        } )
+        
+        movies.sort((a, b) => b.rating - a.rating);
 
+
+        movies.forEach((movie, index) => {
+            const movieCard = document.createElement('div');
+            movieCard.classList.add('movie-card');
+            if (index === 0) {
+                movieCard.classList.add('highest-rated');
+            }
+
+            movieCard.innerHTML = `
+                <h2>${movie.name}</h2>
+                <p>Release Year: ${movie.releaseYear}</p>
+                <p>Rating: ${movie.rating}</p>
+                <p>Main Actors: ${movie.mainActors.join(', ')}</p>
+            `;
+
+            document.body.appendChild(movieCard);
+        });
     </script>
 </body>
 
