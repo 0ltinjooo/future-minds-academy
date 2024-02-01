@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 5px;
+            font-size: 1.1rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input {
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            background-color: green;
+            border: none;
+            padding: 5px;
+            border-radius: 7px;
+            display: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .valid {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <label for="email">Email:</label><br>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+    <br>
+    <label for="password">Password:</label><br>
+    <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+
+    <ul>
+        <li id="lowercase">At least one lowercase letter</li>
+        <li id="uppercase">At least one uppercase letter</li>
+        <li id="number">At least one number</li>
+        <li id="special">At least one of (.,'!#)</li>
+    </ul>
+    
+    <button id="submitBtn">Submit</button>
+
+    <script>
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const submitButton = document.getElementById('submitBtn');
+        const lowercaseLi = document.getElementById('lowercase');
+        const uppercaseLi = document.getElementById('uppercase');
+        const numberLi = document.getElementById('number');
+        const specialLi = document.getElementById('special');
+
+        const passwordRequirements = {
+            lowercase: /[a-z]/,
+            uppercase: /[A-Z]/,
+            number: /[0-9]/,
+            special: /[.,'!#]/
+        };
+
+        function validatePassword() {
+            const password = passwordInput.value;
+            lowercaseLi.className = password.match(passwordRequirements.lowercase) ? 'valid' : '';
+            uppercaseLi.className = password.match(passwordRequirements.uppercase) ? 'valid' : '';
+            numberLi.className = password.match(passwordRequirements.number) ? 'valid' : '';
+            specialLi.className = password.match(passwordRequirements.special) ? 'valid' : '';
+
+            const allValid = [...document.querySelectorAll('ul li')].every(li => li.className === 'valid');
+            submitButton.style.display = allValid ? 'block' : 'none';
+        }
+
+        function validateEmail() {
+            const email = emailInput.value;
+            const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            if (isValidEmail) {
+                emailInput.style.border = '1px solid green';
+            } else {
+                emailInput.style.border = '1px solid red';
+            }
+        }
+
+        emailInput.addEventListener('input', validateEmail);
+        passwordInput.addEventListener('input', validatePassword);
+    </script>
+</body>
+</html>
