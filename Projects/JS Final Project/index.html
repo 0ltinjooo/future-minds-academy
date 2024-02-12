@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <div  id="sidebar" class="sidebar">
+    <div id="sidebar" class="sidebar">
         <div class="sidebar-overlay">
             <ul class="nav">
                 <li><span class="first-text">
-                    <h2 style="display: inline;">CT&nbsp;<span id="cp">COOL&nbsp;PAGE</span></h2>
-                    
+                        <h2 style="display: inline;">CT&nbsp;<span id="cp">COOL&nbsp;PAGE</span></h2>
+
                     </span></li>
                 <hr>
                 <div class="admin-profile">
@@ -25,13 +25,22 @@
                     <span class="material-icons down-arrow">keyboard_arrow_down</span>
                 </div>
                 <hr>
-                <li class="dashboard"> <a href="#" class="dashboard"><span
-                            class="material-icons">dashboard</span><span class="description">Dashboard</span></a></li>
-                <li> <a href="#"><span class="material-icons">image</span><span class="description"> Pages </span>
-                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li class="dashboard"> <a href="#" class="dashboard"><span class="material-icons">dashboard</span><span
+                            class="description">Dashboard</span></a></li>
+                <li id="dropdown-toggle"> <a href="#"><span class="material-icons">image</span><span class="description"> Pages </span>
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a>
+                    <div class="side-dropdown">
+                        <ul class="dropdown-list">
+                            <li><a>P </span><span>Pricing</a></li>
+                            <li><a>RS </span><span>RTL Support</a></li>
+                            <li><a>T&nbsp;&nbsp;&nbsp;</span><span>Timeline</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li> <a href="#"><span class="material-icons">apps</span> <span class="description"> Components </span>
                         <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
-                <li> <a href="#"><span class="material-icons">content_paste</span> <span class="description"> Forms </span>
+                <li> <a href="#"><span class="material-icons">content_paste</span> <span class="description"> Forms
+                        </span>
                         <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
                 <li> <a href="#"><span class="material-icons">grid_on</span> <span class="description"> Tables </span>
                         <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
@@ -39,9 +48,11 @@
                         <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
                 <li> <a href="#"><span class="material-icons">widgets</span> <span class="description"> Widgets </span>
                         <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
-                <li> <a href="#"><span class="material-icons">trending_up</span> <span class="description"> Charts </span>
+                <li> <a href="#"><span class="material-icons">trending_up</span> <span class="description"> Charts
+                        </span>
                         <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
-                <li> <a href="#"><span class="material-icons">date_range</span> <span class="description"> Calendar </span>
+                <li> <a href="#"><span class="material-icons">date_range</span> <span class="description"> Calendar
+                        </span>
                         <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
             </ul>
         </div>
@@ -64,16 +75,50 @@
                     <span title="Notifications" class="material-icons">notifications</span>
                     <span class="notifications">6</span>
                     <div class="dropdown-menu">
-                        <ul id="notifications">
-                        </ul>
+                      <ul id="notifications">
+                      </ul>
                     </div>
-                </div>
+                  </div>
                 <span title="Profile" class="material-icons">person</span>
             </div>
             <div class="menu">
                 <span class="material-icons" title="Menu">menu</span>
             </div>
         </nav>
+        <div class="settings">
+            <span class="material-icons">
+                settings
+            </span>
+        </div>
+        <div class="settings-container">
+            <h5>SIDEBAR FILTERS</h5>
+            <span class="colors">
+                <span class="c1"></span>
+                <span class="c2"></span>
+                <span class="c3"></span>
+                <span class="c4"></span>
+                <span class="c5"></span>
+                <span class="c6"></span>
+            </span>
+            <hr>
+            <h5>SIDEBAR BACKGROUND</h5>
+            <span class="white"></span>
+            <span class="black"></span>
+            <hr>
+            <div class="on-off">
+                <span>Sidebar Image</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <hr>
+            <h5>IMAGES</h5>
+            <img src="images/sidebar-1.jpg" alt="image">
+            <img src="images/sidebar-2.jpg" alt="image">
+            <img src="images/sidebar-1.jpg" alt="image">
+            <img src="images/sidebar-2.jpg" alt="image">
+        </div>
         <div class="card-content">
             <h4 class="card-title">
                 <div class="material-icons card-image">language</div> Global Sales by Top Locations
